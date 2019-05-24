@@ -1,0 +1,11 @@
+{
+  "name": "terminaldaily.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:phoomparin/terminaldaily.com.git",
+  "author": "Phoomparin Mano <phoomparin@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.0.0-alpha.48"
+  }
+}
