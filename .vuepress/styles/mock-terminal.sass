@@ -1,0 +1,89 @@
+$terminal-bg: #282a36
+$button-size: 15px
+
+$close-button-bg: #ff5b52
+$minimize-button-bg: #e6c02a
+$maximize-button-bg: #54c22c
+
+.terminal-root
+  position: relative
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3)
+
+.terminal-titlebar
+  display: grid
+  align-items: center
+  justify-content: flex-start
+
+  position: relative
+  height: 30px
+  background: darken($terminal-bg, 3%)
+
+.window-controls
+  display: flex
+  flex-direction: row
+  margin-left: 0.3em
+  
+  .button
+    width: $button-size
+    height: $button-size
+    border-radius: 50%
+    margin-left: 0.5em
+    cursor: pointer
+
+  .close
+    background: $close-button-bg
+    box-shadow: 3px 3px 3px transparentize($close-button-bg, 1%)
+
+    &:hover
+      background: darken($close-button-bg, 5%)
+
+  .minimize
+    background: $minimize-button-bg
+    box-shadow: 3px 3px 3px transparentize($minimize-button-bg, 1%)
+
+    &:hover
+      background: darken($minimize-button-bg, 5%)
+
+  .maximize
+    background: $maximize-button-bg
+    box-shadow: 3px 3px 3px transparentize($maximize-button-bg, 1%)
+
+    &:hover
+      background: darken($maximize-button-bg, 5%)
+
+.terminal-container
+  position: relative
+  color: white
+  background: $terminal-bg
+  padding: 1em 1.8em
+  width: 800px
+  height: 300px
+  line-height: 1.6
+  max-width: 800px
+  word-break: break-word
+  white-space: pre-wrap
+  overflow-x: hidden
+  overflow-y: scroll
+  font-size: 1.4em
+  font-family: 'FuraCode Nerd Font', sans-serif
+
+.keyword
+  font-weight: 600
+
+.string
+  color: #f1fa8c
+
+.green
+  color: #4ffa7b
+
+.blue
+  color: #8be9fd
+
+.rainbow
+  background: linear-gradient(top left, #2d2d30, #ffffff)
+
+.terminal-text
+  a
+    text-decoration: none
+    color: inherit
+
