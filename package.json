@@ -1,0 +1,26 @@
+{
+  "name": "terminaldaily.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heypoom/terminaldaily.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heypoom/terminaldaily.com/issues"
+  },
+  "homepage": "https://github.com/heypoom/terminaldaily.com#readme",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  },
+  "scripts": {
+    "dev": "vuepress dev content",
+    "build": "vuepress build content"
+  }
+}
